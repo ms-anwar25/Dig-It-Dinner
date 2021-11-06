@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        body {
+            background-color: #d9d7ce;
+            border: 3px solid black;
+            border-radius: 14px;
+            /* padding: 10px 20px 10px 20px; */
+            margin: 10px 20px 10px 20px;
+            font-family: 'Libre Baskerville', serif;
+        }
+
+        h1 {
+            background-color: rgb(47 215 116);
+            border: 4px solid #6ed76e;
+            padding: 25px;
+            width: 95%;
+            margin: 20px auto;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        h3 {
+            text-decoration: underline grey;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        .name {
+            padding: 0px 0px 10px 20px;
+        }
+
+        .pay {
+            display: block;
+            width: 55px;
+            margin: 10px auto;
+            box-sizing: border-box;
+        }
+
+        .yahoo {
+            border: 2px solid #ba9393;
+            margin: 10px;
+            border-radius: 22px;
+        }
+
+        input[type="reset"] {
+            background-color: rgb(223, 68, 68);
+            padding: 7px 10%;
+            display: block;
+            margin: 10px auto;
+            border: none;
+            color: wheat;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: green;
+            display: block;
+            padding: 8px;
+            margin: 5px auto;
+            width: 50%;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .las :hover {
+            background-color: rgb(192, 113, 113);
+        }
+
+        .last :hover {
+            background-color: rgb(132, 202, 61);
+        }
+
+        input[type="text"] {
+            width: 30%;
+        }
+
+        input[type="email"] {
+            width: 30%;
+        }
+
+        input[type="number"] {
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>User Information</h3>
+
+    <form action="anwar.php">
+        <div class="name">
+            <label for="1"> Name: * </label> <br>
+            <input type="text" name="User name" id="1" required>
+        </div>
+        <div class="name">
+            DOB: * <input type="date" name="DOB" id="" required>
+        </div>
+        <div class="name">
+            Gender: * Male <input type="radio" name="Gender" id="" required>
+            Female <input type="radio" name="Gender" id="" required>
+            Others <input type="radio" name="Gender" id="" required>
+        </div>
+        <div class="name">
+            <label for="3"> Email I'd: * </label> <br>
+            <input type="email" name="Email id" id="3" placeholder="anwar@gmail.com" required>
+        </div>
+        <div class="name">
+            <label for="4"> Mobile No: * </label> <br>
+            <input type="number" name="mobile no" id="4" required>
+        </div>
+        <div class="name">
+            <label for="5"> Address: </label> <br>
+            <textarea name="Address" id="5" cols="100" rows="7" placeholder="write your permanent address"></textarea>
+        </div>
+        <div class="name">
+            <label for="6">Password: * </label> <br>
+            <input type="password" name="password" id="4" required>
+        </div>
+        <div class="las">
+            <input type="reset" value="Reset">
+        </div>
+        <div class="last">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>
